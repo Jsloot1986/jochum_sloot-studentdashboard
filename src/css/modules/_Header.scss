@@ -1,0 +1,13 @@
+.header{
+    height: 220px;
+    background: $backgroundColorHeader;
+    text-align: center;
+    box-shadow: 1px 8px 17px 6px rgba(0, 0, 0, 0.2);
+}
+
+@media(max-width: 700px){
+    .header{
+        height: 110px;
+        width: 100%;
+    }
+}

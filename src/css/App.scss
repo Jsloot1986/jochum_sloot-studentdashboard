@@ -1,0 +1,15 @@
+// Core Partial
+@import "Variables";
+@import "Mixins";
+@import "Base";
+@import "Layout";
+
+// import modules
+@import "modules/Home";
+@import "modules/StudentOverview";
+@import "modules/Header";
+@import "modules/NavBar";
+@import "modules/Chart";
+@import "modules/SelectAssignment";
+@import "modules/SortButtons";
+@import "modules/Student";

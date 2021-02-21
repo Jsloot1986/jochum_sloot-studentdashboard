@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Truculenta:wght@300;600;800&display=swap");
+body {
+  font: 200 1em/1.5em "Truculenta", sans-serif;
+  background: dodgerblue;
+  color: #000000;
+}
+
+p {
+  font-weight: 200;
+  padding-bottom: 10px;
+}
+
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: dodgerblue;
+  color: #3632ed;
+}
+
+h1 {
+  display: inline;
+  vertical-align: middle;
+  font-size: 50px;
+  font-weight: 800;
+  color: dodgerblue;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 0.5em;
+}
+
+ul {
+  list-style: none;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+img {
+  display: inline;
+  padding: 2em;
+  vertical-align: middle;
+}
+
+@media (max-width: 700px) {
+  body {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  img {
+    width: 75px;
+    padding: 1em;
+    padding-left: 0;
+  }
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 75vw;
+  margin: 0 auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 2em;
+  padding-top: 3em;
+}
+
+@media (max-width: 700px) {
+  .menu {
+    display: block;
+  }
+}
+
+.header {
+  height: 220px;
+  background: #FFFFFF;
+  text-align: center;
+  -webkit-box-shadow: 1px 8px 17px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 8px 17px 6px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 700px) {
+  .header {
+    height: 110px;
+    width: 100%;
+  }
+}
+
+.navBar {
+  padding: 2em;
+  text-align: center;
+}
+
+.navBar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+button {
+  background: #0000CD;
+  width: 10em;
+  color: #FFFFFF;
+  padding: 0.5em;
+  border-radius: 10px;
+  font-size: 15px;
+  margin-top: 1.5em;
+}
+
+@media (max-width: 700px) {
+  .navBar ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .navBar ul li {
+    margin: 1.2em;
+  }
+  button {
+    font-size: 12px;
+  }
+}
+
+.chartcomponent {
+  background: #FFFFFF;
+  width: 75vw;
+  min-height: 300px;
+  margin: 0 auto;
+  border: #0000CD solid 4px;
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 5em;
+  padding-left: 5em;
+  -webkit-box-shadow: 16px 10px 15px -2px rgba(0, 0, 0, 0.19);
+          box-shadow: 16px 10px 15px -2px rgba(0, 0, 0, 0.19);
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+  background: #0000CD;
+  padding: 0.5em;
+  border-radius: 10px;
+}
+
+a:visited {
+  color: #FFFFFF;
+}
+
+a:hover {
+  color: gold;
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .chartcomponent {
+    min-height: 120px;
+    padding-left: 2em;
+    padding-top: 2em;
+  }
+}
+
+.selectassignments {
+  text-align: center;
+  background: #FFE4B5;
+  border-radius: 20px;
+  padding: 1em;
+  border: #0000CD solid 3px;
+  -webkit-box-shadow: 16px 10px 15px -2px rgba(0, 0, 0, 0.19);
+          box-shadow: 16px 10px 15px -2px rgba(0, 0, 0, 0.19);
+}
+
+.selectassignments ul {
+  text-align: left;
+  -webkit-columns: 4;
+          columns: 4;
+}
+
+.selectassignments button {
+  margin: 2em;
+}
+
+select {
+  font-size: 16px;
+}
+
+.dropDown {
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 2em;
+}
+
+.dropDown label {
+  padding-right: 1em;
+}
+
+@media (max-width: 700px) {
+  .selectassignments {
+    margin-bottom: 2em;
+  }
+  .selectassignments ul {
+    text-align: left;
+    -webkit-columns: 2;
+            columns: 2;
+  }
+  .dropDown {
+    font-size: 15px;
+  }
+  select {
+    font-size: 14px;
+  }
+}
+
+.sortButtons {
+  background: #FFE4B5;
+  border-radius: 20px;
+  padding: 1em;
+  margin-bottom: 20em;
+  border: #0000CD solid 3px;
+  -webkit-box-shadow: 16px 10px 15px -2px rgba(0, 0, 0, 0.19);
+          box-shadow: 16px 10px 15px -2px rgba(0, 0, 0, 0.19);
+}
+
+.sortButtons label {
+  padding: 1em;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 12px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 10px;
+  left: -30px;
+  height: 25px;
+  width: 25px;
+  border-radius: 7px;
+  background: #FFFFFF;
+}
+
+.container:hover input ~ .checkmark {
+  background: lightgrey;
+}
+
+.container input:checked ~ .checkmark {
+  background: #32CD32;
+}
+
+.container:hover input:checked ~ .checkmark {
+  background: #adebad;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: #FFFFFF solid border-width;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+/*# sourceMappingURL=App.css.map */

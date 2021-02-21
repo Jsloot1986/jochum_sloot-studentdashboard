@@ -1,0 +1,47 @@
+body{
+    background: $backgroundColorBody;
+    color: lighten($homeblue, 20);
+
+}
+
+h1{
+    display: inline;
+    vertical-align: middle;
+    font-size: 50px;
+    font-weight: $heavy;
+    color: $blue;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: $bold;
+    padding-bottom: 0.5em;
+}
+
+ul{
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+img{
+    display: inline;
+    padding: 2em;
+    vertical-align: middle;
+}
+
+@media(max-width: 700px){
+    body{
+        font-size: 12px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    img{
+        width: 75px;
+        padding: 1em;
+        padding-left: 0;
+    }
+}

@@ -1,0 +1,32 @@
+.navBar{
+    padding: 2em;
+    text-align: center;
+}
+
+.navBar ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+button{
+    background: $backgroundColorButton;
+    width: 10em;
+    color: $light;
+    padding: 0.5em;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 1.5em;
+}
+
+@media(max-width: 700px){
+    .navBar ul{
+        flex-wrap: wrap;
+    }
+    .navBar ul li{
+        margin: 1.2em;
+    }
+    button{
+        font-size: 12px;
+    }
+}
+

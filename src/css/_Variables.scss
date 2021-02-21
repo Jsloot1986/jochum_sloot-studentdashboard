@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:wght@300;600;800&display=swap');
+
+//Color palette
+$blue: dodgerblue;
+$dark: #000000;
+$light: #FFFFFF;
+$darkblue: #0000CD;
+$green: #32CD32;
+$grey: lightgrey;
+$moccasin: #FFE4B5;
+$steelblue: #4682B4;
+$homeblue: #120faa;
+
+
+$backgroundColorBody: $blue;
+$backgroundColorHeader: $light;
+$backgroundColorStudentOverveiw: $light;
+$backgroundColorButton: $darkblue;
+$checkedColor: $green;
+$oncheckedColor: $grey;
+$selectBackground: $moccasin;
+
+//Font variables
+$fontfamily: 'Truculenta', sans-serif;
+$thin: 200;
+$normal: 400;
+$bold: 600;
+$heavy: 800;
+
+$headFont: $thin 1.5em/1.5em $fontfamily;
+$mainFont: $thin 1em/1.5em $fontfamily;
+$headerColor: lighten($blue, 20);
+
