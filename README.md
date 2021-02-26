@@ -1,3 +1,13 @@
+Comment! beste Winc Docent,
+Het is mij niet gelukt om met de csv file te werken en heb daardoor de csv omgezet naar een js file.
+csv wel gebruikt voor de tandartsapp...maar op een of andere manier lukte het niet om met de hooks de juiste data te krijgen uit het CSV bestand!
+
+Volgens mij was de CSV geen verplichte onderdeel geloof ik...
+
+groet,
+
+Jochum
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
