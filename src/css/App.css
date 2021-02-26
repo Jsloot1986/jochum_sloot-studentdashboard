@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Truculenta:wght@300;600;800&display=swap");
 body {
   font: 200 1em/1.5em "Truculenta", sans-serif;
-  background: dodgerblue;
+  background: -webkit-gradient(linear, left top, left bottom, from(dodgerblue), to(skyblue));
+  background: linear-gradient(to bottom, dodgerblue 0%, skyblue 100%);
   color: #000000;
 }
 
@@ -174,7 +175,8 @@ a:hover {
 
 .selectassignments {
   text-align: center;
-  background: #FFE4B5;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #FFE4B5), to(gold));
+  background: linear-gradient(to bottom, #FFE4B5 30%, gold 100%);
   border-radius: 20px;
   padding: 1em;
   border: #0000CD solid 3px;
@@ -224,7 +226,8 @@ select {
 }
 
 .sortButtons {
-  background: #FFE4B5;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #FFE4B5), to(gold));
+  background: linear-gradient(to bottom, #FFE4B5 30%, gold 100%);
   border-radius: 20px;
   padding: 1em;
   margin-bottom: 20em;
@@ -277,13 +280,7 @@ select {
 }
 
 .container:hover input:checked ~ .checkmark {
-  background: #adebad;
-}
-
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
+  background: #cdcdcd;
 }
 
 .container input:checked ~ .checkmark:after {
@@ -295,9 +292,28 @@ select {
   top: 5px;
   width: 5px;
   height: 10px;
-  border: #FFFFFF solid border-width;
+  border: #FFFFFF solid 3px;
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.studentInfo {
+  border: #4682B4 solid 3px;
+  color: #FFFFFF;
+  background: -webkit-gradient(linear, left top, left bottom, from(#33ccff), to(#0000CD));
+  background: linear-gradient(to bottom, #33ccff 0%, #0000CD 100%);
+  width: 100%;
+}
+
+li img {
+  border-radius: 40%;
+  width: 200px;
 }
 /*# sourceMappingURL=App.css.map */

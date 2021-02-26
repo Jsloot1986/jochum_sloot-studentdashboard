@@ -2,6 +2,11 @@ const studentsdata =
     [
     {
         name: "Evelyn",
+        surName: "Bakker",
+        age: "1990/01/20",
+        phone: "0622990011",
+        email: "evelyn.bakker@email.nl",
+        img: "http://dummyimage.com/230x126.jpg/dddddd/000000",
         checked: true,
         assignments: [
             { checked: true, assignmentName: "SCRUM", difficult: 3, fun: 4 },
@@ -63,6 +68,11 @@ const studentsdata =
     },
     {
         name: "Aranka",
+        surName: "Smits",
+        age: "1995/02/03",
+        phone: "0629023411",
+        email: "aranka.smits@email.nl",
+        img: "http://dummyimage.com/165x158.bmp/5fa2dd/ffffff",
         checked: true,
         assignments:
             [{ assignmentName: "SCRUM", difficult: 1, fun: 1 },
@@ -124,6 +134,11 @@ const studentsdata =
     },
     {
         name: "Floris",
+        surName: "Witteman",
+        age: "1993/10/06",
+        phone: "0666309876",
+        email: "floris.witteman@email.nl",
+        img: "http://dummyimage.com/142x158.jpg/5fa2dd/ffffff",
         checked: true,
         assignments:
             [{ assignmentName: "SCRUM", difficult: 2, fun: 1 },
@@ -185,6 +200,11 @@ const studentsdata =
     },
     {
         name: "Hector",
+        surName: "Woudman",
+        age: "1992/10/30",
+        phone: "0692405787",
+        email: "hector.woudman@email.nl",
+        img: "http://dummyimage.com/133x100.jpg/cc0000/ffffff",
         checked: true,
         assignments:
             [{ assignmentName: "SCRUM", difficult: 1, fun: 2 },
@@ -246,6 +266,11 @@ const studentsdata =
     },
     {
         name: "Martina",
+        surName: "Wiersma",
+        age: "1994/03/22",
+        phone: "0676564532",
+        email: "martina.wiersma@email.nl",
+        img: "http://dummyimage.com/165x127.jpg/ff4444/ffffff",
         checked: true,
         assignments:
             [{ assignmentName: "SCRUM", difficult: 1, fun: 1 },
@@ -307,6 +332,11 @@ const studentsdata =
     },
     {
         name: "Maurits",
+        surName: "Breukman",
+        age: "1996/08/19",
+        phone: "0644231098",
+        email: "maurits.breukman@email.nl",
+        img: "http://dummyimage.com/243x234.png/dddddd/000000",
         checked: true,
         assignments:
             [{ assignmentName: "SCRUM", difficult: 3, fun: 4 },
@@ -368,6 +398,11 @@ const studentsdata =
     },
     {
         name: "Rahima",
+        surName: "Bouali",
+        age: "1995/11/22",
+        phone: "0667894433",
+        email: "rahima.bouali@email.nl",
+        img: "http://dummyimage.com/122x116.jpg/cc0000/ffffff",
         checked: true,
         assignments:
             [{ assignmentName: "SCRUM", difficult: 2, fun: 4 },
@@ -429,6 +464,11 @@ const studentsdata =
     },
     {
         name: "Sandra",
+        surName: "Boomsma",
+        age: "1992/12/24",
+        phone: "0688997654",
+        email: "sandra.boomsma@email.nl",
+        img: "http://dummyimage.com/199x229.bmp/ff4444/ffffff",
         checked: true,
         assignments:
             [{ assignmentName: "SCRUM", difficult: 4, fun: 1 },
@@ -490,6 +530,11 @@ const studentsdata =
     },
     {
         name: "Wietske",
+        surName: "Bakker",
+        age: "1994/06/08",
+        phone: "0612907856",
+        email: "wietske.bakker@email.nl",
+        img: "http://dummyimage.com/161x188.jpg/ff4444/ffffff",
         checked: true,
         assignments:
             [{ assignmentName: "SCRUM", difficult: 1, fun: 1 },
@@ -551,6 +596,11 @@ const studentsdata =
     },
     {
         name: "Storm",
+        surName: "Boonstra",
+        age: "1991/10/22",
+        phone: "0667859900",
+        email: "storm.boonstra@email.nl",
+        img: "http://dummyimage.com/170x199.bmp/dddddd/000000",
         checked: true,
         assignments:
             [{ assignmentName: "SCRUM", difficult: 1, fun: 1 },

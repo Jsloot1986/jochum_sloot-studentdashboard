@@ -15,6 +15,7 @@ const Student = ({ student, pagename, index }) => {
     };
 
     return (
+        
         <li>
             {!pagename &&
                 <label className="container">
@@ -26,7 +27,8 @@ const Student = ({ student, pagename, index }) => {
                     <span className="checkmark"></span>
                 </label>}
             <Link to={url}>{student.name}</Link>
-        </li>
+
+            </li>
     )
 };
 export default Student;

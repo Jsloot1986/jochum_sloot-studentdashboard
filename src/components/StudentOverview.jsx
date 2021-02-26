@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import NavBar from './NavBar';
 import Header from './Header';
 import Chart from './Chart';
+import LineChart from './LineChart';
 import SelectAssignment from './SelectAssignment';
 import SortButtons from './SortButtons';
 
@@ -18,6 +19,7 @@ const StudentOverview = () => {
             <Header pagename={pageName} />
             <NavBar pagename={pageName} />
             <Chart pagename={pageName} />
+            <LineChart pagename={pageName} />
             <div className="menu">
                 <SelectAssignment />
                 <SortButtons />

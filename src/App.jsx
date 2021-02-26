@@ -23,7 +23,7 @@ const App = () => {
                 component={StudentOverview}
                 />
             </div>
-          </SortProvider>
+            </SortProvider>
         </AssignmentProvider>
       </StudentProvider>
     </Router>
