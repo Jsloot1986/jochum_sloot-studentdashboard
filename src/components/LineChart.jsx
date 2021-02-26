@@ -1,19 +1,21 @@
-import React, { useContext } from 'react';
+import React, { useContext} from 'react';
 import {
-    VictoryBar,
     VictoryChart,
+    VictoryLabel,
+    VictoryLine,
     VictoryGroup,
     VictoryLegend,
-    VictoryLabel,
     VictoryAxis,
-    VictoryLine,
-    VictoryTooltip
+    VictoryVoronoiContainer,
+    VictoryTooltip,
+    VictoryTheme,
+    VictoryClipContainer,
 } from 'victory';
 import { StudentContext } from './context/StudentContext';
 import { SortContext } from './context/SortContext';
 import { AssignmentContext } from './context/AssignmentContext';
 
-const Chart = ({ pagename }) => {
+const LineChart = ({ pagename }) => {
     const [students] = useContext(StudentContext);
 
     const filterStudents = () => {
@@ -105,10 +107,27 @@ const Chart = ({ pagename }) => {
         <div className="chartcomponent">
             {filteredStudents.length > 0 &&
                 weighedAssignments.length > 0 &&
-                <VictoryChart height={200}>
+                <VictoryChart
+                height={200}
+                theme={VictoryTheme.material}
+                containerComponent={
+                    <VictoryVoronoiContainer
+                        mouseFollowTooltips
+                        voronoiDimension="x"
+                        labels={({ datum }) => `y: ${datum.y}`}
+                        labelComponent={
+                            <VictoryTooltip
+                                style={{fill: "darkblue"}}
+                                cornerRadius={0}
+                                flyoutStyle={{ fill: "white" }}
+                                x={10}
+                                y={50}
+                                width={200}
+                            />}
+            />}>
                     <VictoryLabel
                         text={conditiontalLabel}
-                        x={225}
+                        x={180}
                         y={8}
                         textAnchor="middle"
                         style={{ fill: "#120faa" }} />
@@ -192,15 +211,18 @@ const Chart = ({ pagename }) => {
                                 strokeWidth: 0.3
                             }
                         }} />
-                    <VictoryGroup offset={150 / weighedAssignments.length}>
-                        <VictoryBar
+                    <VictoryGroup offset={160 / weighedAssignments.length}>
+                        <VictoryLine
                             data={barData.difficult}
-                            style={{ data: { fill: 'red' } }}
+                            style={{ data: { stroke: 'red' } }}
                             barWidth={130 / weighedAssignments.length}
                             animate={{
                                 duration: 1500,
                                 onLoad: { duration: 1000 }
-                            }}
+                        }}
+                        groupComponent={<VictoryClipContainer 
+                            clipPadding={{ top: 5, right: 10 }} />}
+                        
                             labels={({ datum }) => `${datum.x} \n difficult-grade: ${datum.y.toString().slice(0, 3)}`}
                             labelComponent={
                                 <VictoryTooltip
@@ -218,15 +240,18 @@ const Chart = ({ pagename }) => {
                                         fontSize: 8,
                                         fill: "#120faa"
                                     }} />
-                            } />
-                        <VictoryBar
+                            }/>
+                        <VictoryLine
                             data={barData.fun}
-                            style={{ data: { fill: 'green' } }}
+                            style={{ data: { stroke: 'green' } }}
                             barWidth={130 / weighedAssignments.length}
                             animate={{
                                 duration: 1500,
                                 onLoad: { duration: 1000 }
-                            }}
+                        }}
+                        groupComponent={<VictoryClipContainer clipPadding={{
+                            top: 5, right: 10
+                        }}/>}
                             labels={({ datum }) => `${datum.x} \n fun-grade: ${datum.y.toString().slice(0, 3)}`}
                             labelComponent={
                                 <VictoryTooltip
@@ -253,7 +278,7 @@ const Chart = ({ pagename }) => {
                                 dx={6}
                                 dy={-9}
                                 style={{
-                                    fontSize: 5,
+                                    fontSize: 4,
                                     fill: "#120faa"
                                 }}
                                 textAnchor={"end"}
@@ -266,18 +291,18 @@ const Chart = ({ pagename }) => {
                         style={{
                             ticketLabels:
                             {
-                                fontSize: 7,
+                                fontSize: 6,
                                 fill: "#120faa"
                             },
                             axisLabel:
                             {
-                                fontSize: 6,
+                                fontSize: 5,
                                 padding: 35,
                                 fill: "#120faa"
                             }
                         }} />
                     <VictoryLegend
-                        x={185}
+                        x={180}
                         y={30}
                         orientation="horizontal"
                         data={[
@@ -305,7 +330,7 @@ const Chart = ({ pagename }) => {
             {weighedAssignments.length === 0 &&
                 <h1>Please select at least one assignment.</h1>}
         </div>
-    )
-};
-
-export default Chart;
+            
+    );
+}
+export default LineChart;

@@ -1,6 +1,6 @@
 .selectassignments{
     text-align: center;
-    background: $selectBackground;
+    background: linear-gradient(to bottom, $selectBackground 30%, gold 100%);
     border-radius: 20px;
     padding: 1em;
     @include bordered($darkblue, 3px);

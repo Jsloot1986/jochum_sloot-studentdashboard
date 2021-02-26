@@ -4,6 +4,7 @@ import { StudentContext } from './context/StudentContext';
 import Student from './Student';
 import { SortContext } from './context/SortContext';
 import { AssignmentContext } from './context/AssignmentContext';
+import StudentInfo from './StudentInfo';
 
 const NavBar = ({ pagename }) => {
     const [students, setStudents] = useContext(StudentContext);
@@ -14,7 +15,7 @@ const NavBar = ({ pagename }) => {
         setStudents(newStudents)
     };
 
-    const [setSort] = useContext(SortContext);
+    const [, setSort] = useContext(SortContext);
 
     const [assignments, setAssignments] = useContext(AssignmentContext);
 
@@ -29,6 +30,7 @@ const NavBar = ({ pagename }) => {
             return { ...prevState, difficult: false, fun: false }
         });
     };
+   
 
     return (
         <div className="navBar">
@@ -37,6 +39,8 @@ const NavBar = ({ pagename }) => {
                 {students.map((student, index) => <Student key={index} student={student} pagename={pagename} index={index} />)}
             </ul>
             {!pagename && <button onClick={() => selectAllStudents()}>Select All Students</button>}
+            {students.map((student, index) => <StudentInfo key={index} student={student} pagename={pagename} index={index} />)}
+        
         </div>
     )
 };

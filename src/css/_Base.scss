@@ -1,6 +1,6 @@
 body{
     font: $mainFont;
-    background: $backgroundColorBody;
+    background: linear-gradient(to bottom, $backgroundColorBody 0%, skyblue 100%);
     color: $dark;
 }
 
